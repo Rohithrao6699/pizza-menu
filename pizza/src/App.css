@@ -1,0 +1,292 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  color: #252525;
+  font-weight: 400;
+  background-color: #f7f2e9;
+  border-bottom: 1.6rem solid #edc84b;
+  min-height: 100vh;
+  padding: 4.2rem;
+  padding-bottom: 6rem;
+}
+
+.App {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.2rem;
+}
+
+header {
+  align-self: stretch;
+}
+h1 {
+  color: #edc84b;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4.2rem;
+  font-weight: 100;
+  position: relative;
+  letter-spacing: 3px;
+  width: 100%;
+  display: block;
+}
+
+header h1::before,
+header h1::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 4rem;
+  background-color: #edc84b;
+  position: absolute;
+  top: calc(80% - 1px);
+}
+
+header h1::before {
+  left: 0;
+}
+
+header h1::after {
+  right: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.menu h2 {
+  display: inline-block;
+  border-top: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.menu > p {
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.6;
+  width: 80%;
+}
+
+.pizzas {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.5rem;
+}
+
+.pizza {
+  display: flex;
+  gap: 3rem;
+}
+
+.pizza img {
+  width: 12rem;
+  aspect-ratio: 1;
+  align-self: start;
+}
+
+.pizza div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pizza h3 {
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+.pizza p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  font-style: italic;
+  margin-top: 5px;
+  margin-bottom: auto;
+}
+.pizza span {
+  display: block;
+  font-size: 1.4rem;
+}
+
+.pizza.SoldOut {
+  color: #888;
+}
+
+.pizza.SoldOut img {
+  filter: grayscale();
+}
+
+.order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.order p {
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.btn {
+  color: black;
+  background-color: #edc84b;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #e9bb24;
+} */
+
+/* rewrote styles again for practise */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  color: #252525;
+  background-color: #f7f2e9;
+  border-bottom: 1.6rem solid #edc84b;
+}
+
+.App {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+/* */
+header {
+  align-self: stretch;
+}
+h1 {
+  color: #edc84b;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 100;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  width: 100%;
+  display: block;
+}
+
+/* */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}
+
+.menu h2 {
+  display: inline-block;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.menu p {
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+.pizzas {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.5rem;
+}
+
+.pizza {
+  display: flex;
+  gap: 2rem;
+}
+.pizza img {
+  width: 12rem;
+  aspect-ratio: 1;
+  align-self: start;
+}
+.pizza div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.pizza h3 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.pizza p {
+  font-size: 1rem;
+  font-weight: 100;
+  font-style: italic;
+  margin-top: 5px;
+  margin-bottom: auto;
+}
+.pizza span {
+  display: block;
+  font-size: 1.4rem;
+}
+
+.pizza.SoldOut {
+  color: #888;
+}
+.pizza.SoldOut img {
+  filter: grayscale();
+}
+
+/* */
+.footer {
+  font-size: 1rem;
+  font-weight: 100;
+  font-style: italic;
+}
+.order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.order p {
+  font-size: 1rem;
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.btn {
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #edc84b;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
